@@ -3,12 +3,16 @@ body {
 }
 
 .container {
-  max-width: 1300px;
+  max-width: 1400px;
   margin: 0 auto;
+}
+section {
+  max-width: 1200px;
+  padding: 50px 150px;
 }
 
 header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
     url("../images/berlin.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -46,6 +50,50 @@ header a {
   text-transform: uppercase;
   letter-spacing: 1px;
   border-radius: 2px;
+}
+
+footer {
+  background-image: linear-gradient(
+      rgba(39, 32, 68, 0.9),
+      rgba(39, 32, 68, 0.9)
+    ),
+    url("../images/berlin-footer.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 30px 0;
+  color: white;
+}
+
+footer h3 {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+footer p {
+  font-size: 12px;
+  opacity: 0.6;
+  line-height: 1.5;
+}
+
+footer ul {
+  padding: 0;
+  font-size: 12px;
+  opacity: 0.6;
+}
+
+footer li {
+  list-style: none;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+  grid-gap: 5px;
 }
 
 @media (max-width: 900px) {
