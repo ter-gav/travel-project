@@ -8,7 +8,6 @@ body {
 }
 .grid {
   display: grid;
-  align-items: center;
 }
 
 .img-responsive {
@@ -18,16 +17,28 @@ body {
 .grid-2-columns {
   grid-template-columns: 1fr 1fr;
   grid-gap: 30px;
+  align-items: center;
+}
+
+.grid-3-columns {
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 30px;
+  margin-top: 30px;
 }
 
 .grid-3-columns-first-small {
   grid-template-columns: 1fr 2fr 2fr;
   grid-gap: 50px;
 }
+
 section {
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
-  padding: 50px 0;
+  padding: 100px;
+}
+
+section.secondary {
+  background: #f9f9f9;
 }
 
 header {
@@ -90,6 +101,16 @@ main h3 {
   line-height: 1.5;
 }
 
+main h4 {
+  margin: 0;
+  font-size: 28px;
+}
+
+main h5 {
+  font-size: 14px;
+  margin: 0;
+}
+
 main p {
   line-height: 1.5;
   opacity: 0.7;
@@ -103,7 +124,6 @@ footer {
     url("../images/berlin-footer.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-
   color: white;
 }
 
@@ -132,6 +152,43 @@ footer li {
 footer a {
   color: white;
   text-decoration: none;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.card {
+  background: white;
+}
+
+.card-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 140px;
+}
+
+.card-header img {
+  height: 100%;
+}
+
+.card-body {
+  padding: 20px 30px;
+}
+.card-body p {
+  font-size: 14px;
+}
+
+.card a {
+  background: #462cb3;
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  display: block;
+  text-align: center;
+  margin-top: 20px;
 }
 
 @media (max-width: 900px) {
