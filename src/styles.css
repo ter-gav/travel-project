@@ -163,6 +163,10 @@ footer a {
   text-decoration: none;
 }
 
+.primary img {
+  filter: contrast(175%) brightness(80%);
+}
+
 .text-center {
   text-align: center;
 }
